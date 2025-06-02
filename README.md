@@ -30,11 +30,11 @@ Capturas de tela do html:
 <br>
 ## Por que usar Quarto para escrever a monografia?
 
-- **Open-source** e multiplataforma: Funciona no Windows, macOS e Linux.
--	Sintaxe simples e **formatação automatizada**: Você escreve em Markdown e o modelo segue as normas da universidade; sem ajustes manuais e comandos complexos de LaTeX.
-- Código e monografia **reprodutível**: Integra análise de dados diretamente no texto.
-- Saída em **múltiplos formatos**: PDF e HTML a partir do mesmo arquivo fonte.
--	Atualização facilitada: Separação entre conteúdo e formatação facilita futuras mudanças.
+- 🌎 **Open-source** e multiplataforma: Funciona no Windows, macOS e Linux.
+-	📐 Sintaxe simples e **formatação automatizada**: Você escreve em Markdown e o modelo segue as normas da universidade; sem ajustes manuais e comandos complexos de LaTeX.
+- 📊 Código e monografia **reprodutível**: Integra análise de dados diretamente no texto.
+- 🗂️ Saída em **múltiplos formatos**: PDF e HTML a partir do mesmo arquivo fonte.
+-	🔁 **Atualização facilitada**: Separação entre conteúdo e formatação facilita futuras mudanças.
 
 ## Requisitos do Sistema
 
@@ -48,11 +48,14 @@ Para utilizar esta extensão, é necessário que seu sistema atenda aos seguinte
   - [Positron](https://posit.co/download/positron/)
   - [VS Code](https://code.visualstudio.com/) com a [extensão Quarto](https://marketplace.visualstudio.com/items?itemName=quarto.quarto)
 
+Se não quiser instalar localmente, é possível acessar o Quarto diretamente no navegador através do [Posit Cloud](http://posit.cloud/).
+
 ### Dependências adicionais 
 
 - [Pandoc](https://pandoc.org) ≥ 3.6.3 *(já incluso no Quarto)*
 - [TinyTeX](https://yihui.org/tinytex/) atualizado (para renderização LaTeX)
     - No terminal:
+    
       ```bash
       quarto install tinytex
       ```
@@ -149,7 +152,7 @@ quarto render --to tese-ufsc-pdf
 
 Se estiver usando o Rstudio, você pode clicar no botão "Render Book" em Build, e especificar o formato.
 
-## Atenção - capitulo1 tem código de R e python
+## Atenção - capitulo1 tem código de R e Python
 
 Usuários de Julia: Após instalar a extensão, procure por {r} e {python} no arquivo capitulos/capitulo1.qmd e remova o código (relacionado a figura e tabela) ou substitua por código em Julia.
 
