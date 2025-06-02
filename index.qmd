@@ -1,0 +1,40 @@
+# Introdução {#sec-intro}
+
+Esse é um exemplo de um documento escrito em [Quarto](https://quarto.org) [@martins2025]. Você também pode adicionar citação assim: segundo @martins2025...
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna. Donec ullamcorper leo vitae fringilla ornare. Morbi vitae leo ligula. Sed feugiat felis tellus, eget sodales lorem congue at.
+
+A @fig-fluxo é um exemplo de fluxograma (@fig-fluxo).
+
+```{mermaid}
+%%| label: fig-fluxo
+%%| fig-cap: |
+%%|   Fluxograma do processo científico
+%%| fig-width: 2
+---
+config:  
+    theme: neutral
+    themeVariables:
+      fontSize: 16
+---
+
+flowchart TB
+    A[Observação] --> B(Formulação da pergunta)
+    B --> C(Pesquisa de literatura)
+    C --> D(Hipótese)
+    D --> E(Coleta e análise dos dados)
+    E --> F(Dissociação ou revisão da hipótese)
+    F --> G[Disseminação dos resultados]
+    
+    style A fill:#00923f,stroke:#666666,color:#FFFFFF;
+    style G fill:#00923f,stroke:#666666,color:#FFFFFF;
+```
+
+# Objetivo geral {#sec-goals}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor.
+
+## Objetivos específicos
+
+a) Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna.
+b) Morbi vitae leo ligula.

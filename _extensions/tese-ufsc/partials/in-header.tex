@@ -1,0 +1,153 @@
+% layout
+    %% indentation in paragraph
+    \usepackage{indentfirst}
+    \setlength{\parindent}{1.25cm}
+
+    %% allowing landscape page for tables
+    \usepackage{pdflscape}
+    \newcommand{\blandscape}{\begin{landscape}}
+    \newcommand{\elandscape}{\end{landscape}}
+
+    %% font specs
+    \addtokomafont{disposition}{\rmfamily}
+     \usepackage{setspace}
+     \usepackage{sectsty}
+     \usepackage{titlesec}
+     
+     \titleformat{\chapter}[hang]
+      {\normalfont\fontsize{12}{14}\selectfont\bfseries\MakeUppercase}
+      {\thechapter\hspace{.5em}}
+      {0pt}
+      {}
+      
+    \titlespacing*{\chapter}{0pt}{-1.5em}{1.5em}
+    
+    \titleformat{\section}[hang]
+      {\normalfont\fontsize{12}{14}\selectfont\normalfont\MakeUppercase}
+      {\thesection\hspace{1em}}
+      {0pt}
+      {}
+    
+    \titlespacing*{\section}{0pt}{1.5em}{1.5em}
+    
+    \titleformat{\subsection}[hang]
+      {\normalfont\fontsize{12}{14}\selectfont\bfseries}
+      {\thesubsection\hspace{.5em}}
+      {0pt}
+      {}
+    
+    \titlespacing*{\subsection}{0pt}{1.5em}{1.5em}
+    
+    \titleformat{\subsubsection}[hang]
+      {\normalfont\fontsize{12}{14}\selectfont\normalfont\itshape}
+      {\thesubsubsection\hspace{1em}}
+      {0pt}
+      {}
+      
+    \titlespacing*{\subsubsection}{0pt}{1.5em}{1.5em}
+    
+    %% Appendix
+    \usepackage{etoolbox}
+    \usepackage{tocloft}
+    
+    \pretocmd{\appendix}{
+      \renewcommand{\chaptername}{}
+      \renewcommand{\thechapter}{\Alph{chapter}}
+      \titleformat{\chapter}
+        {\normalfont\bfseries\centering\MakeUppercase}
+        {\chaptername~\thechapter\ --}
+        {}{}
+    }{}{}
+
+    % centrelize tocs title and standardize list format
+
+    \renewcommand{\cfttoctitlefont}{\hfill\bfseries}
+    \renewcommand{\cftaftertoctitle}{\hfill}
+    \setlength{\cftbeforetoctitleskip}{-1.5em}
+    
+    \renewcommand{\cftloftitlefont}{\hfill\bfseries}
+    \renewcommand{\cftafterloftitle}{\hfill}
+    \setlength{\cftbeforeloftitleskip}{-1.5em}
+    
+    \renewcommand{\cftfigpresnum}{Figura~}
+    \renewcommand{\cftfigaftersnum}{ -- }
+    \setlength{\cftfignumwidth}{4.5em}
+
+    \renewcommand{\cftlottitlefont}{\hfill\bfseries}
+    \renewcommand{\cftafterlottitle}{\hfill}
+    \setlength{\cftbeforelottitleskip}{-1.5em}
+    
+    \renewcommand{\cfttabpresnum}{Tabela~}
+    \renewcommand{\cfttabaftersnum}{ -- }
+    \setlength{\cfttabnumwidth}{4.5em}
+
+    %% figures and tables
+    \usepackage{caption}
+    \usepackage{amsmath}
+    
+    \renewcommand{\figurename}{Figura}
+    \renewcommand{\tablename}{Tabela}
+    
+    \DeclareCaptionLabelSeparator{travessao}{\enspace--\enspace}
+    \DeclareCaptionLabelFormat{semPonto}{#1~#2} 
+    
+    \captionsetup{
+      labelfont=normal,
+      labelsep=travessao, 
+      format=plain,
+      labelformat=semPonto,
+      skip=18pt
+    }
+    
+    % remove numbering by chapter
+    \makeatletter
+    \renewcommand{\thefigure}{\arabic{figure}}
+    \renewcommand{\thetable}{\arabic{table}}
+    \renewcommand{\theequation}{\arabic{equation}}
+    \makeatother
+    
+    % avoid restart numbering of figures and tables in each chapter
+    \usepackage{chngcntr}
+    \counterwithout{figure}{chapter}
+    \counterwithout{table}{chapter}
+    \counterwithout{equation}{chapter}
+    
+    %% page number
+    \usepackage{fancyhdr}
+    
+    \fancyhf{}
+    \fancyhead[R]{\thepage}         
+    \renewcommand{\headrulewidth}{0pt}
+    \pagestyle{fancy}               
+
+    \fancypagestyle{plain}{         
+    \fancyhf{}
+    \fancyhead[R]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+    }
+    
+    %% other used packages
+    \usepackage{ragged2e}
+    \usepackage{longtable}
+    \usepackage{svg}
+    \usepackage{graphicx}
+    \usepackage{grffile}
+    \usepackage{float}
+    
+    \justifying
+    \onehalfspacing
+    
+% tables packages not being used
+% - \usepackage{booktabs}
+% - \usepackage{longtable}
+% - \usepackage{array}
+% - \usepackage{multirow}
+% - \usepackage{wrapfig}
+% - \usepackage{colortbl}
+% - \usepackage{pdflscape}
+% - \usepackage{tabu}
+% - \usepackage{threeparttable}
+% - \usepackage{threeparttablex}
+% - \usepackage[normalem]{ulem}
+% - \usepackage{makecell}
+% - \usepackage{xcolor}

@@ -1,0 +1,117 @@
+---
+#você pode organizar o capítulo assim, com todos os tópicos reunidos em um .qmd, ou pode criar um arquivo para cada seção, como no capitulo2.qmd.
+echo: false #se quer que todos os códigos sejam mostrados, colocar true
+---
+
+# Título capítulo 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. 
+
+\bigskip
+
+Código em R:
+
+```{r}
+#| label: code-exemplo-r
+#| echo: true
+
+print("Olá, ufsquianos!")
+```
+
+Para scripts maiores, você pode usar o comando `source()` para carregar um script externo. Por exemplo, o script `exemplo.R` contém um resumo de medidas de comprimento do bico por espécie de pinguim.
+
+```{r}
+#| label: code-exemplo-r-source
+#| message: false
+#| 
+# Carrega o script silenciosamente
+source(here::here("analises/exemplo.R"))
+```
+
+Para a espécie Adelie, a média do comprimento do bico é `r round(resumo$media[resumo$species == 'Adelie'], 1)` mm.
+
+\bigskip
+
+Código em Python:
+
+```{python}
+#| label: code-exemplo-python
+#| echo: true
+
+print("Olá, ufsquianos!")
+```
+
+## Subtítulo capítulo 1
+
+ A @tbl-ex representa um exemplo de tabela em markdown (@tbl-ex).
+
+: Título da tabela {#tbl-ex}
+
+| **Observação** | Variável1 | Variável2 |
+|--:|-------|-------|
+| 1 | A | X |
+| 2 | B | Y |
+| 3 | C | Z |
+
+::: {.pagebreak}
+:::
+
+Outro forma de criar tabela (@tbl-ex2):
+
+```{r}
+#| label: tbl-ex2
+#| tbl-cap: "Título da tabela"
+#| echo: true
+
+library(knitr)
+dados <- data.frame(
+  Observação = c(1, 2, 3),
+  Variável1 = c("A", "B", "C"),
+  Variável2 = c("X", "Y", "Z")
+) 
+kable(dados)
+```
+
+### Mais um tópico
+
+Aqui está um exemplo de equação ([@eq-bhaskara]).
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$ {#eq-bhaskara}
+
+Essa equação poderia estar *inline* também, por exemplo: $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+
+#### Outro tópico
+
+Exemplo de figura (@fig-ex):
+
+```{r}
+#| label: fig-ex
+#| fig-cap: "Exemplo de figura"
+#| fig-pos: "H" #deixa a figura bem posicionada automaticamente
+#| fig-width: 5 #padrão é 7
+
+library(ggplot2)
+
+dados <- readxl::read_xlsx(here::here("dados/dados_penguins.xlsx"))
+
+# Gráfico de dispersão
+ggplot(data = dados, aes(x = bill_length_mm, y = body_mass_g, color = species)) +
+  geom_point() +
+  labs(
+    x = "Comprimento do bico (mm)",
+    y = "Massa corporal (g)",
+    color = "Espécie"
+  ) +
+  scale_color_manual(values = c("Adelie" = "#00478f", "Chinstrap" = "#da251d", "Gentoo" = "#fee300")) +
+  theme_bw()
+
+```
+::: {.content-visible when-format="pdf"}
+\begin{spacing}{1} \footnotesize
+Legenda: Exemplo de legenda.
+\end{spacing} \normalsize \bigskip
+:::
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. 

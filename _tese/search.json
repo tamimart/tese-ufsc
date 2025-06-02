@@ -1,0 +1,94 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Título: subtítulo da Tese/Dissertação",
+    "section": "",
+    "text": "1 Introdução\nEsse é um exemplo de um documento escrito em Quarto (Martins, 2025). Você também pode adicionar citação assim: segundo Martins (2025)…\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna. Donec ullamcorper leo vitae fringilla ornare. Morbi vitae leo ligula. Sed feugiat felis tellus, eget sodales lorem congue at.\nA Figura 1.1 é um exemplo de fluxograma (Figura 1.1).\n---\nconfig:  \n    theme: neutral\n    themeVariables:\n      fontSize: 16\n---\n\nflowchart TB\n    A[Observação] --&gt; B(Formulação da pergunta)\n    B --&gt; C(Pesquisa de literatura)\n    C --&gt; D(Hipótese)\n    D --&gt; E(Coleta e análise dos dados)\n    E --&gt; F(Dissociação ou revisão da hipótese)\n    F --&gt; G[Disseminação dos resultados]\n    \n    style A fill:#00923f,stroke:#666666,color:#FFFFFF;\n    style G fill:#00923f,stroke:#666666,color:#FFFFFF;\n\n\n\n\nFigura 1.1: Fluxograma do processo científico",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#objetivos-específicos",
+    "href": "index.html#objetivos-específicos",
+    "title": "Título: subtítulo da Tese/Dissertação",
+    "section": "2.1 Objetivos específicos",
+    "text": "2.1 Objetivos específicos\n\nPraesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna.\nMorbi vitae leo ligula.\n\n\n\n\n\nMARTINS, T. tese-ufsc: um template Quarto para teses e dissertações da UFSC. Disponível em: &lt;http://github.com/tamimart/tese-ufsc&gt;.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/capitulo1.html",
+    "href": "capitulos/capitulo1.html",
+    "title": "2  Título capítulo 1",
+    "section": "",
+    "text": "2.1 Subtítulo capítulo 1\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo.\nCódigo em R:\nPara scripts maiores, você pode usar o comando source() para carregar um script externo. Por exemplo, o script exemplo.R contém um resumo de medidas de comprimento do bico por espécie de pinguim.\nPara a espécie Adelie, a média do comprimento do bico é 38.8 mm.\nCódigo em Python:\nA Tabela 2.1 representa um exemplo de tabela em markdown (Tabela 2.1).\nOutro forma de criar tabela (Tabela 2.2):\nlibrary(knitr)\ndados &lt;- data.frame(\n  Observação = c(1, 2, 3),\n  Variável1 = c(\"A\", \"B\", \"C\"),\n  Variável2 = c(\"X\", \"Y\", \"Z\")\n) \nkable(dados)\n\n\n\nTabela 2.2: Título da tabela\n\n\n\n\n\n\nObservação\nVariável1\nVariável2\n\n\n\n\n1\nA\nX\n\n\n2\nB\nY\n\n\n3\nC\nZ",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Título capítulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/capitulo1.html#subtítulo-capítulo-1",
+    "href": "capitulos/capitulo1.html#subtítulo-capítulo-1",
+    "title": "2  Título capítulo 1",
+    "section": "",
+    "text": "Tabela 2.1: Título da tabela\n\n\n\n\n\nObservação\nVariável1\nVariável2\n\n\n\n\n1\nA\nX\n\n\n2\nB\nY\n\n\n3\nC\nZ\n\n\n\n\n\n\n\n\n\n\n\n\n2.1.1 Mais um tópico\nAqui está um exemplo de equação (Equação 2.1).\n\\[\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\tag{2.1}\\]\nEssa equação poderia estar inline também, por exemplo: \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).\n\n2.1.1.1 Outro tópico\nExemplo de figura (Figura 2.1):\n\n\n\n\n\n\n\n\nFigura 2.1: Exemplo de figura\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Título capítulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/capitulo2.html",
+    "href": "capitulos/capitulo2.html",
+    "title": "3  Título capítulo 2",
+    "section": "",
+    "text": "3.1 Fundamentação teórica\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna. Donec ullamcorper leo vitae fringilla ornare. Morbi vitae leo ligula. Sed feugiat felis tellus, eget sodales lorem congue at.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna. Donec ullamcorper leo vitae fringilla ornare. Morbi vitae leo ligula. Sed feugiat felis tellus, eget sodales lorem congue at.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Título capítulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/capitulo2.html#sec-methods",
+    "href": "capitulos/capitulo2.html#sec-methods",
+    "title": "3  Título capítulo 2",
+    "section": "3.2 Métodos",
+    "text": "3.2 Métodos\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna. Donec ullamcorper leo vitae fringilla ornare. Morbi vitae leo ligula. Sed feugiat felis tellus, eget sodales lorem congue at.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Título capítulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "depois-capitulos/references.html",
+    "href": "depois-capitulos/references.html",
+    "title": "Referências",
+    "section": "",
+    "text": "MARTINS, T. tese-ufsc: um template Quarto para\nteses e dissertações da UFSC. Disponível em: &lt;http://github.com/tamimart/tese-ufsc&gt;.\n\n\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Referências"
+    ]
+  },
+  {
+    "objectID": "depois-capitulos/apendice-a.html",
+    "href": "depois-capitulos/apendice-a.html",
+    "title": "Apêndice A – Título do apêndice",
+    "section": "",
+    "text": "Adicionar informações extras.\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Apêndices",
+      "Apêndice A -- Título do apêndice"
+    ]
+  },
+  {
+    "objectID": "depois-capitulos/anexo-a.html",
+    "href": "depois-capitulos/anexo-a.html",
+    "title": "Anexo A – Título do anexo",
+    "section": "",
+    "text": "Adicionar informações extras externas.\n\n\n\n De volta ao topo",
+    "crumbs": [
+      "Apêndices",
+      "Anexo A -- Título do anexo"
+    ]
+  }
+]

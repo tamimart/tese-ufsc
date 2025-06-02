@@ -1,0 +1,256 @@
+%%%% CAPA %%%%
+\begin{center}
+\thispagestyle{empty}
+\onehalfspacing
+
+\includegraphics[height=$logo-height$]{$logo$}
+
+UNIVERSIDADE FEDERAL DE SANTA CATARINA\\
+\MakeUppercase{$if(teseufsc.centro)$$teseufsc.centro$$endif$}\\
+PROGRAMA DE PÓS-GRADUAÇÃO EM \MakeUppercase{$if(teseufsc.PPG)$$teseufsc.PPG$$endif$}\\
+\vspace{7.5em}
+
+$if(teseufsc.autor)$$teseufsc.autor$$else$autor$endif$
+
+\vspace{7.5em}
+
+\textbf{$if(teseufsc.titulo)$$teseufsc.titulo$$endif$}$if(teseufsc.subtitulo)$: {$teseufsc.subtitulo$}$endif$
+
+\vfill
+
+Florianópolis\\
+$if(teseufsc.ano)$$teseufsc.ano$$else$2026$endif$
+
+\end{center}
+
+%%%% FOLHA DE ROSTO %%%%
+\clearpage \thispagestyle{empty} \setcounter{page}{1}
+\pagestyle{plain}
+\onehalfspacing
+
+\begin{center}
+
+$if(teseufsc.autor)$$teseufsc.autor$$else$autor$endif$
+
+\vspace{13.5em}
+
+\textbf{$if(teseufsc.titulo)$$teseufsc.titulo$$endif$}$if(teseufsc.subtitulo)$: {$teseufsc.subtitulo$}$endif$
+
+\end{center}
+
+\vspace{7.5em}
+
+\begin{flushright}
+\begin{minipage}{0.5\textwidth}
+\footnotesize
+\singlespacing
+\justifying
+\noindent
+$if(teseufsc.tipo-documento)$$teseufsc.tipo-documento$$else$tipo-documento$endif$ submetida ao Programa de Pós-Graduação em $if(teseufsc.PPG)$$teseufsc.PPG$$endif$ da Universidade Federal de Santa Catarina como requisito parcial para a obtenção do título de $if(teseufsc.titulo-concedido)$$teseufsc.titulo-concedido$$endif$.\\
+
+\noindent
+Orientador(a): $if(teseufsc.orientador)$$teseufsc.orientador$$endif$ \\
+Coorientador(a): $if(teseufsc.coorientador)$$teseufsc.coorientador$$endif$
+
+\end{minipage}
+\end{flushright}
+
+\normalsize
+\onehalfspacing
+
+\vfill
+
+\begin{center}
+$if(teseufsc.cidade)$$teseufsc.cidade$$else$Florianópolis$endif$\\
+$if(teseufsc.ano)$$teseufsc.ano$$else$2026$endif$
+\end{center}
+
+%%%% FICHA CATALOGRÁFICA %%%%%
+\begin{center}
+\newpage \thispagestyle{empty}
+
+$if(teseufsc.ficha-catalografica)$
+  \vspace*{\fill}
+  \includegraphics[width=0.7\textwidth, keepaspectratio]{$teseufsc.ficha-catalografica$}
+  \vspace{2em}
+$else$
+  \vspace*{\fill}
+  \indent
+  \begin{center}
+    \setlength{\fboxsep}{10pt}
+    \fbox{%
+      \begin{minipage}{0.6\textwidth}
+        \begin{center}
+
+        \textbf{Ficha catalográfica para trabalhos acadêmicos}
+
+        \vspace{1em}
+
+        [Insira neste espaço a ficha catalográfica para trabalhos acadêmicos.]
+
+        \vspace{1em}
+
+        A ficha é elaborada pelo(a) autor(a) no seguinte link: \\
+        \url{http://portalbu.ufsc.br/ficha}
+        
+        \end{center}
+        \vspace{4cm}
+      \end{minipage}
+    }
+  \end{center}
+  \vspace*{2em}
+$endif$
+
+\end{center}
+
+%%%% FICHA DE CERTIFICAÇÃO %%%%%
+\newpage{} \thispagestyle{empty}
+
+\begin{center}
+
+\vspace{2em}
+
+$if(teseufsc.autor)$$teseufsc.autor$$else$autor$endif$
+
+\vspace{2em}
+
+\textbf{$if(teseufsc.titulo)$$teseufsc.titulo$$endif$}$if(teseufsc.subtitulo)$: {$teseufsc.subtitulo$}$endif$
+
+\vspace{2em}
+
+O presente trabalho em nível $if(teseufsc.nivel)$$teseufsc.nivel$$else$autor$endif$ foi avaliado e aprovado, em $if(teseufsc.dia)$$teseufsc.dia$$else$dia$endif$ de $if(teseufsc.mes)$$teseufsc.mes$$else$mes$endif$ de $if(teseufsc.ano)$$teseufsc.ano$$else$ano$endif$, pela banca examinadora composta pelos seguintes membros:
+
+\vspace{2em}
+
+$if(teseufsc.examinador1)$$teseufsc.examinador1$$else$examinador1$endif$
+
+Instituição $if(teseufsc.instituicao-examinador1)$$teseufsc.instituicao-examinador1$$else$instituicao-examinador1$endif$
+
+\vspace{2em}
+
+$if(teseufsc.examinador2)$$teseufsc.examinador2$$else$examinador2$endif$
+
+Instituição $if(teseufsc.instituicao-examinador2)$$teseufsc.instituicao-examinador2$$else$instituicao-examinador2$endif$
+
+\vspace{2em}
+
+$if(teseufsc.examinador3)$$teseufsc.examinador3$$else$examinador3$endif$
+
+Instituição $if(teseufsc.instituicao-examinador3)$$teseufsc.instituicao-examinador3$$else$instituicao-examinador3$endif$
+
+\vspace{2em}
+
+Certificamos que esta é a versão original e final do trabalho de conclusão que foi julgado adequado para obtenção do título de Doutora em Farmacologia.
+
+\vspace{3em}
+
+\noindent\fbox{
+\begin{minipage}[c][2em][c]{0.25\textwidth}
+\begin{center}
+\singlespacing
+\scriptsize
+Insira neste espaço a assinatura digital.
+\end{center}
+\end{minipage}
+}
+
+\vspace{1em}
+
+Coordenação do Programa de Pós-Graduação em $if(teseufsc.PPG)$$teseufsc.PPG$$endif$
+
+\vspace{3em}
+
+\noindent\fbox{
+\begin{minipage}[c][2em][c]{0.25\textwidth}
+\begin{center}
+\singlespacing
+\scriptsize
+Insira neste espaço a assinatura digital.
+\end{center}
+\end{minipage}
+}
+
+\vspace{1em}
+$if(teseufsc.orientador)$$teseufsc.orientador$$endif$\\
+Orientador(a)
+\vfill
+
+Florianópolis, 2026.
+\end{center}
+
+%%%% DEDICATÓRIA %%%%%
+\newpage{} \thispagestyle{empty}
+
+\onehalfspacing
+
+$if(teseufsc.dedicatoria)$
+\vspace*{\fill}
+\begin{flushright}
+  $teseufsc.dedicatoria$
+\end{flushright}
+\vspace{1.5em}
+$endif$
+
+%%%% AGRADECIMENTOS %%%%%
+\newpage{} \thispagestyle{empty}
+
+$if(teseufsc.agradecimentos)$
+\begin{center}
+\textbf{AGRADECIMENTOS}
+\end{center}
+\vspace{1.5em}
+\onehalfspacing
+\indent
+\justifying
+$teseufsc.agradecimentos$
+$endif$
+
+%%%% EPÍGRAFE %%%%%
+\newpage \thispagestyle{empty}
+
+$if(teseufsc.epigrafe)$
+\vspace*{\fill}
+\begin{flushright}
+  \textit{$teseufsc.epigrafe$}\\
+  $if(teseufsc.autor-epigrafe)$
+    — $teseufsc.autor-epigrafe$
+  $endif$
+\end{flushright}
+$endif$
+
+%%%% RESUMO %%%%%
+\newpage \thispagestyle{empty}
+
+\vspace*{0pt}
+\begin{center}
+  \textbf{RESUMO}
+\end{center}
+
+\singlespacing
+\justifying
+\noindent 
+$if(teseufsc.resumo)$$teseufsc.resumo$$endif$
+
+\vspace{1em}
+
+\noindent \textbf{Palavras-chave:} $if(teseufsc.palavras-chave)$$teseufsc.palavras-chave$$endif$ 
+
+%%%% ABSTRACT %%%%%
+\newpage
+\thispagestyle{empty}
+
+\vspace*{0pt}
+\begin{center}
+  \textbf{ABSTRACT}
+\end{center}
+
+\singlespacing
+\justifying
+\noindent
+$if(teseufsc.abstract)$$teseufsc.abstract$$endif$
+
+\vspace{1em}
+
+\noindent \textbf{Keywords:} $if(teseufsc.keywords)$$teseufsc.keywords$$endif$
+
+\justifying

@@ -1,0 +1,96 @@
+project:
+  type: book
+  output-dir: "_tese"
+
+#adicione aqui informações sobre você e o seu trabalho
+book:
+  favicon: imagens/favicon.ico #logo da UFSC na aba do navegador
+  title: "Título: subtítulo da Tese/Dissertação"
+  date: "2025/05/29"
+  author: 
+    - name: Tamires Martins #seu nome completo
+      orcid: "0000-0002-3793-2122" #se tiver ORCID, adicione aqui
+      email: tamiresmartins.fln@gmail.com #seu email
+      url: https://github.com/tamimart/ #link para o seu perfil
+      affiliation: 
+        - name: CAMARADES BR
+          url: https://camaradesbrasil.bio.br/
+        - name: UFSC
+          url: https://www.ufsc.br/
+  downloads: [pdf] #opção de download do PDF pelo site
+  chapters:
+    - index.qmd #esse arquivo é o primeiro após o sumário, use para a introduçao
+    - capitulos/capitulo1.qmd #adicione nesta lista o caminho para os capitulos
+    - capitulos/capitulo2.qmd
+    - depois-capitulos/references.qmd
+  appendices:
+    - depois-capitulos/apendice-a.qmd
+    - depois-capitulos/anexo-a.qmd
+  output-file: tese-ufsc
+  sidebar: 
+     logo: imagens/brasao-UFSC.png
+     logo-alt: "Brasão da UFSC"
+     search: true
+     border: true
+
+#adicione informações sobre a sua tese/dissertação
+teseufsc:
+  tipo-documento: Tese #ou Dissertação    
+  autor: Seu nome completo
+  titulo: Título da Tese/Dissertação
+  subtitulo: subtítulo da tese/dissertação
+  centro: Centro de Ciências Biológicas #exemplo
+  PPG: Farmacologia #exemplo
+  dia: 01 #dia da defesa
+  mes: dezembro #mes da defesa
+  ano: 2026 #ano da defesa
+  cidade: Florianópolis #exemplo
+  orientador: Profa. Dra. Fulana
+  coorientador: Dra. Ciclana
+  nivel: Doutorado #exemplo
+  titulo-concedido: Doutora em Farmacologia #exemplo
+  examinador1: Prof(a). [Nome do(a) Examinador(a) 1], Dr(a).
+  instituicao-examinador1: [Nome da instituição do(a) Examinador(a) 1]
+  examinador2: Prof(a). [Nome do(a) Examinador(a) 2], Dr(a).
+  instituicao-examinador2: [Nome da instituição do(a) Examinador(a) 2]
+  examinador3: Prof(a). [Nome do(a) Examinador(a) 3], Dr(a).
+  instituicao-examinador3: [Nome da instituição do(a) Examinador(a) 3]
+  dedicatoria: "Dedico este trabalho aos meus pais." # Se não quiser incluir deixar em branco.
+  agradecimentos: "Texto em que o autor faz agradecimentos dirigidos àqueles que contribuíram de maneira relevante à elaboração do trabalho. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor." # Se não quiser incluir deixar em branco.
+  epigrafe: "Frase inspiradora." # Se não quiser incluir deixar em branco.
+  autor-epigrafe: Fulana de tal. # Se não quiser incluir deixar em branco.
+  resumo: "Entre 150 e 500 palavras. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna. Donec ullamcorper leo vitae fringilla ornare. Morbi vitae leo ligula. Sed feugiat felis tellus, eget sodales lorem congue at."
+  palavras-chave: "Termo 1; Termo 2; Termo 3."
+  abstract: "Versão em inglês do resumo. Contém os mesmos elementos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna. Donec ullamcorper leo vitae fringilla ornare. Morbi vitae leo ligula. Sed feugiat felis tellus, eget sodales lorem congue at."
+  keywords: "keyword 1; keyword 2; keyword 3."
+  lof: true #mostrar lista de figuras?
+  lot: true #mostrar lista de tabelas?
+  abreviaturas: | #se não quiser incluir deixar em branco
+   \begin{tabular}{ll}
+      
+    ANVISA & Agência Nacional de Vigilância Sanitária \\ 
+    CNPq & Conselho Nacional de Desenvolvimento Científico e Tecnológico \\
+    CAPES & Coordenação de Aperfeiçoamento de Pessoal de Nível Superior \\
+    OMS & Organização Mundial da Saúde \\
+      
+   \end{tabular}
+  ficha-catalografica: "imagens/ficha-catalografica.png" #caminho para a imagem da ficha catalográfica; se deixar em branco, aparece template.
+
+csl: arquivos-auxiliares/abnt2023.csl #arquivo com estilo de citações em CSL
+bibliography: arquivos-auxiliares/references.bib #arquivo com referencias em BibTeX
+
+lang: pt-BR #ou outro idioma, ex: en para inglês
+mainfont: "Times New Roman" #ou Arial
+fontsize: 12pt #ou 11pt
+
+format:
+  tese-ufsc-html: default
+  tese-ufsc-pdf: default
+  
+website:
+  back-to-top-navigation: true
+  reader-mode: true
+  bread-crumbs: true
+  repo-url: https://github.com/tamimart/tese-ufsc
+  repo-actions: [source, issue]
+  

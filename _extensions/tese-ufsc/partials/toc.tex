@@ -1,0 +1,54 @@
+%%%% LISTA DE FIGURAS %%%%
+$if(teseufsc.lof)$
+  \clearpage
+  {
+    \renewcommand{\listfigurename}{LISTA DE FIGURAS}
+    \listoffigures
+    \thispagestyle{empty}
+    \clearpage
+  }
+$endif$
+
+%%%% LISTA DE TABELAS %%%%
+\doublespacing
+$if(teseufsc.lot)$
+  \clearpage
+  {
+    \renewcommand{\listtablename}{LISTA DE TABELAS}
+    \listoftables
+    \thispagestyle{empty}
+    \clearpage
+  }
+$endif$
+
+%%%% LISTA DE ABREVIATURAS E SIGLAS %%%%
+
+$if(teseufsc.abreviaturas)$
+\clearpage
+
+\begin{center}
+\textbf{LISTA DE ABREVIATURAS E SIGLAS}
+\end{center}
+\vspace{1.5em}
+\noindent \onehalfspacing
+$teseufsc.abreviaturas$
+\thispagestyle{empty}
+$endif$
+
+%%%% LISTA DE CONTEUDO %%%%
+
+$if(toc)$
+  \clearpage
+  {
+    $if(colorlinks)$
+      $if(toccolor)$
+       \hypersetup{linkcolor=$toccolor$}
+      $endif$
+   $endif$
+    
+    \renewcommand{\contentsname}{SUMÁRIO}
+    \setcounter{tocdepth}{$toc-depth$}
+    \tableofcontents
+    \thispagestyle{empty}
+  }
+$endif$

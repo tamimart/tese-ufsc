@@ -1,0 +1,72 @@
+title: tese-ufsc
+description: "Um template {Quarto} para teses e dissertações da UFSC"
+author: "tamimart"
+url: https://github.com/tamimart/
+date: 2025
+version: 1.0.0
+quarto-required: ">=1.7.31"
+
+contributes:
+  project:
+    type: book
+    format: tese-ufsc
+    
+  formats:
+    common:
+      logo: brasao-UFSC.png 
+      logo-height: "2.54cm"
+      justify: true
+      toc: true
+      toc-depth: 5
+      code-block-border-left: "#eeeeee"
+      highlight-style: kate
+    html: 
+      theme: lux
+      title-block-banner: true
+      page-layout: full
+      code-overflow: wrap
+      code-line-numbers: true
+      css: style.css
+    pdf:
+      pdf-engine: xelatex
+      citation-package: pandoc
+      embed-resources: true
+      include-in-header: 
+        - partials/in-header.tex
+      template-partials:
+        - partials/before-body.tex
+        - partials/toc.tex
+      documentclass: scrreprt
+      classoption: [oneside]
+      number-sections: true
+      papersize: a4
+      margin-top: "3cm"
+      margin-bottom: "2cm"
+      margin-left: "3cm"
+      margin-right: "2cm"
+      cap-location: top 
+      subcap-location: bottom 
+      linestretch: 1.5
+      indent: true 
+      whitespace: small
+      link-citations: true
+      linkcolor: black
+      urlcolor: blue
+      citecolor: black
+      keep-tex: false
+      
+fig-align: center
+fig-width: 7
+fig-format: svg
+fig-dpi: 600
+fig-cap-location: top
+fig-subcap-location: top
+
+editor: source
+
+execute: 
+  echo: false
+  message: false
+  warning: false
+  error: false
+  freeze: auto

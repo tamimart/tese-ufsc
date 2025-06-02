@@ -1,0 +1,9 @@
+---
+#você pode organizar o capítulo assim, com um arquivo para cada seção; ou pode reunir todos os tópicos em um .qmd, como no capitulo1.qmd.
+echo: false #se quer que todos os códigos sejam mostrados, colocar true
+---
+# Título capítulo 2
+
+{{< include capitulo2-fundamentacao.qmd >}}
+
+{{< include capitulo2-metodos.qmd >}}

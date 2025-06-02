@@ -1,0 +1,17 @@
+/* Centraliza e controla logo no sidebar */
+.sidebar-logo {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  max-height: 75px !important;
+  width: auto !important;
+  #margin-left: auto; 
+  margin-right: auto;
+  margin-bottom: 20px !important;
+}
+
+/* Aumenta espessura dos arrows do mermaid */
+path {
+  stroke-width: 1 !important;
+  stroke: #666666 !important;
+}
