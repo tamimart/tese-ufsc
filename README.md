@@ -11,19 +11,19 @@ Um template [Quarto](https://quarto.org/docs/get-started/) para teses e disserta
 
 Exemplos renderizados [aqui](https://github.com/tamimart/tese-ufsc/_tese).
 
-Captura de tela do PDF:
+Capturas de tela do PDF:
 
 <br>
 <div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%;">
-  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="200" />
-  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="200" />
-  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="200" />
-  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="200" />
-  <img src="_extensions/tese-ufsc/capturas/captura5.png" width="200" />
+  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="250" />
+  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="250" />
+  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="250" />
+  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="250" />
+  <img src="_extensions/tese-ufsc/capturas/captura5.png" width="250" />
 </div>
 <br>
 
-Capturas de tela do HTML:
+Captura de tela do HTML:
 
 <br>
 <div style="display: flex; align-items: center; gap: 20px; width: 100%;">
