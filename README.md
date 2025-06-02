@@ -138,7 +138,7 @@ quarto install extension tamimart/tese-ufsc
 
 ## Renderizando o documento
 
-Para apenas visualizar o html, você pode usar o terminal com o seguinte comando do Quarto:
+Para apenas visualizar o HTML, você pode usar o terminal com o seguinte comando do Quarto:
 
 ```bash
 quarto preview
