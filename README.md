@@ -1,8 +1,10 @@
 
 # tese-ufsc
 
-<img src="_extensions/tese-ufsc/logo-quarto.png" width="200" style="float: right; margin-left: 20px;" />
-<img src="_extensions/tese-ufsc/brasao-UFSC.png" width="200" style="float: right; margin-right: 20px;" />
+<div style="display: flex; align-items: center; gap: 20px;">
+  <img src="_extensions/tese-ufsc/logo-quarto.png" width="100" />
+  <img src="_extensions/tese-ufsc/brasao-UFSC.png" width="100" />
+</div>
 
 Um template [Quarto](https://quarto.org/docs/get-started/) para teses e dissertações da UFSC.
 
@@ -10,17 +12,21 @@ Exemplos renderizados [aqui](https://github.com/tamimart/tese-ufsc/_tese).
 
 Capturas de tela do pdf:
 
-<img src="_extensions/tese-ufsc/capturas/captura1.png" width="100" />
-<img src="_extensions/tese-ufsc/capturas/captura2.png" width="100" />
-<img src="_extensions/tese-ufsc/capturas/captura3.png" width="100" />
-<img src="_extensions/tese-ufsc/capturas/captura4.png" width="100" />
-<img src="_extensions/tese-ufsc/capturas/captura5.png" width="100" />
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="150" />
+  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="150" />
+  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="150" />
+  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="150" />
+  <img src="_extensions/tese-ufsc/capturas/captura5.png" width="150" />
+</div>
 
 Capturas de tela do html:
 
-<img src="_extensions/tese-ufsc/capturas/captura6.png" width="100" />
-<img src="_extensions/tese-ufsc/capturas/captura7.png" width="100" />
-<img src="_extensions/tese-ufsc/capturas/captura8.png" width="100" />
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="_extensions/tese-ufsc/capturas/captura6.png" width="200" />
+  <img src="_extensions/tese-ufsc/capturas/captura7.png" width="200" />
+  <img src="_extensions/tese-ufsc/capturas/captura8.png" width="200" />
+</div>
 
 ## Por que usar Quarto para escrever a monografia?
 
