@@ -1,9 +1,9 @@
 
 # tese-ufsc
 
-<div style="display: flex; gap: 20px; width: 100%;">
+<div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
+  <img src="_extensions/tese-ufsc/brasao-UFSC.png" width="90" />
   <img src="_extensions/tese-ufsc/logo-quarto.png" width="100" />
-  <img src="_extensions/tese-ufsc/brasao-UFSC.png" width="100" />
 </div>
 <br>
 
@@ -14,20 +14,18 @@ Exemplos renderizados [aqui](https://github.com/tamimart/tese-ufsc/_tese).
 Capturas de tela do PDF:
 
 <br>
-<div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%;">
-  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="250" />
-  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="250" />
-  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="250" />
-  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="250" />
-  <img src="_extensions/tese-ufsc/capturas/captura5.png" width="250" />
+<div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; width: 100%;">
+  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="260" />
+  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="260" />
+  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="260" />
 </div>
 <br>
 
 Captura de tela do HTML:
 
 <br>
-<div style="display: flex; align-items: center; gap: 20px; width: 100%;">
-  <img src="_extensions/tese-ufsc/capturas/captura6.png" width="800" style="margin: 10px 0;" />
+<div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
+  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="800" style="margin: 10px 0;" />
 </div>
 <br>
 
@@ -65,39 +63,41 @@ Se não quiser instalar localmente, é possível acessar o Quarto diretamente no
       
 ## Estrutura do template
 
-```
+```r
+.
 ├── LICENSE.md
 ├── README.md
-├── _extensions
-│   └── tese-ufsc                  #extensão personalizada com o template UFSC para uso em Quarto; só alterar se souber o que está fazendo ou tiver coragem
+├── _extensions                    #extensão personalizada com o template UFSC para uso em Quarto; só alterar se souber o que está fazendo ou tiver coragem
+│   └── tese-ufsc
 │       ├── _extension.yml
 │       ├── brasao-UFSC.png
+│       ├── capturas
+│       │   ├── captura1.png
+│       │   ├── captura2.png
+│       │   ├── captura3.png
+│       │   └── captura4.png
 │       ├── logo-quarto.png
 │       ├── partials
 │       │   ├── before-body.tex
 │       │   ├── in-header.tex
 │       │   └── toc.tex
+│       ├── style.css
 │       └── templates
 │           └── template-ufsc.docx
-├── _quarto.yml                    #configuração principal do projeto - onde você define o título, autor, formatação, etc
-├── _tese                          #saída dos arquivos renderizados: tese-ufsc.pdf e index.html
-│   ├── capitulos                  
-│   │   ├── capitulo1.html
-│   │   └── capitulo2.html
-│   ├── depois-capitulos
-│   │   ├── apendice-a.html
-│   │   └── references.html
+├── _quarto.yml                     #configuração principal do projeto - onde você define o título, autor, formatação, etc
+├── _tese                           #saída dos arquivos renderizados: tese-ufsc.pdf e index.html
+│   ├── imagens
 │   ├── index.html
 │   ├── search.json
 │   ├── site_libs
 │   └── tese-ufsc.pdf
 ├── analises                        #scripts de análise dos dados 
 │   └── exemplo.R
-├── arquivos-auxiliares             #arquivos auxiliares, como bibliografia, citação em ABNT e dicionários de correção ortográfica
-│   ├── abnt2023.csl
-│   ├── pt_BR.aff
+├── arquivos-auxiliares             
+│   ├── abnt2023.csl                #citação em estilo ABNT 2023
+│   ├── pt_BR.aff                   #dicionários de correção ortográfica: Tools > Global Options > Spelling > Add Dictionary
 │   ├── pt_BR.dic
-│   └── references.bib
+│   └── references.bib              #arquivo de referências bibliográficas
 ├── capitulos                       #arquivos qmd, escreva aqui os capítulos da sua tese/dissertação
 │   ├── capitulo1.qmd
 │   ├── capitulo2-fundamentacao.qmd
@@ -106,13 +106,14 @@ Se não quiser instalar localmente, é possível acessar o Quarto diretamente no
 ├── dados                           #arquivos de dados utilizados nos capítulos
 │   └── dados_penguins.xlsx
 ├── depois-capitulos                #arquivos que ficam após os capítulos, como referências e apêndices/anexos 
+│   ├── anexo-a.qmd
 │   ├── apendice-a.qmd
-│   ├── default.html
-│   ├── references.qmd
-│   └── tese-ufsc.html
-├── imagens                         #imagens utilizadas nos capítulos
+│   └── references.qmd
+├── imagens                         #imagens utilizadas no trabalho
+│   ├── brasao-UFSC.png
+│   ├── favicon.ico
 │   └── ficha-catalografica.png
-├── index.qmd                       #arquivo principal do projeto, com a introdução e objetivos
+├── index.qmd                       #arquivo principal do projeto, onde fica a introdução e objetivos 
 └── tese-ufsc.Rproj
 ```
 
@@ -121,7 +122,7 @@ Se não quiser instalar localmente, é possível acessar o Quarto diretamente no
 - Você basicamente vai editar os arquivos `.qmd` e `_quarto.yml`.
 - O template já vem com dois exemplos de como organizar capítulos.
 - A introdução fica no index.qmd, primeiro capítulo após sumários.
-- **Atenção**: capítulo1 tem código em R e Python. Usuários de Julia: Após instalar a extensão, procure por {r} e {python} no arquivo capitulos/capitulo1.qmd e remova o código (relacionado a figura e tabela) ou substitua por código em Julia.
+- **Atenção**: o arquivo capitulo1.qmd contém exemplos de código em R e Python (relacionados a figuras e tabelas). Se você não utiliza essas linguagens ou não tem instalados no seu sistema, é recomendável remover os blocos de código {r} e {python}, ou substituí-los por código na linguagem que você utiliza (por exemplo, Julia).
 
 ## Instalando o template
 
