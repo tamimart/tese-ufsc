@@ -3,7 +3,7 @@
 
 <div style="display: flex; align-items: center; gap: 20px; width: 100%;">
   <img src="_extensions/tese-ufsc/logo-quarto.png" width="100" />
-  <img src="_extensions/tese-ufsc/brasao-UFSC.png" width="100" />
+  <img src="_extensions/tese-ufsc/brasao-UFSC.png" width="75" />
 </div>
 <br>
 
@@ -11,20 +11,23 @@ Um template [Quarto](https://quarto.org/docs/get-started/) para teses e disserta
 
 Exemplos renderizados [aqui](https://github.com/tamimart/tese-ufsc/_tese).
 
-Capturas de tela do pdf:
+Capturas de tela do PDF:
+
 <br>
 <div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%;">
-  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="200" />
-  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="200" />
-  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="200" />
-  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="200" />
-  <img src="_extensions/tese-ufsc/capturas/captura5.png" width="200" />
+  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="300" />
+  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="300" />
+  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="300" />
+  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="300" />
+  <img src="_extensions/tese-ufsc/capturas/captura5.png" width="300" />
 </div>
 <br>
-Capturas de tela do html:
+
+Capturas de tela do HTML:
+
 <br>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%;">
-  <img src="_extensions/tese-ufsc/capturas/captura6.png" width="600" style="margin: 10px 0;" />
+<div style="display: flex; align-items: center; gap: 20px; width: 100%;">
+  <img src="_extensions/tese-ufsc/capturas/captura6.png" width="800" style="margin: 10px 0;" />
 </div>
 <br>
 
@@ -140,7 +143,7 @@ Para apenas visualizar o html, você pode usar o terminal com o seguinte comando
 quarto preview
 ```
 
-Para renderizar sua tese/dissertação em PDF e html:
+Para renderizar sua tese/dissertação em PDF e HTML:
 ```bash
 quarto render
 ```
