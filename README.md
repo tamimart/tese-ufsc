@@ -32,7 +32,7 @@ Captura de tela do HTML:
 ## Por que usar Quarto para escrever a monografia?
 
 - 🌎 **Open-source** e multiplataforma: Funciona no Windows, macOS e Linux.
--	📐 Sintaxe simples e **formatação automatizada**: Você escreve em Markdown e o modelo segue as normas da universidade; sem ajustes manuais e comandos complexos de LaTeX.
+-	📐 Sintaxe simples e **formatação automatizada**: Você escreve em Markdown e o modelo segue as normas.
 - 📊 Código e monografia **reprodutível**: Integra análise de dados diretamente no texto.
 - 🗂️ Saída em **múltiplos formatos**: PDF e HTML a partir do mesmo arquivo fonte.
 -	🔁 **Atualização facilitada**: Separação entre conteúdo e formatação facilita futuras mudanças.
