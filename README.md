@@ -1,9 +1,9 @@
 
 # tese-ufsc
 
-<div style="display: flex; align-items: center; gap: 20px; width: 100%;">
+<div style="display: flex; gap: 20px; width: 100%;">
   <img src="_extensions/tese-ufsc/logo-quarto.png" width="100" />
-  <img src="_extensions/tese-ufsc/brasao-UFSC.png" width="75" />
+  <img src="_extensions/tese-ufsc/brasao-UFSC.png" width="100" />
 </div>
 <br>
 
@@ -11,15 +11,15 @@ Um template [Quarto](https://quarto.org/docs/get-started/) para teses e disserta
 
 Exemplos renderizados [aqui](https://github.com/tamimart/tese-ufsc/_tese).
 
-Capturas de tela do PDF:
+Captura de tela do PDF:
 
 <br>
 <div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%;">
-  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="300" />
-  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="300" />
-  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="300" />
-  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="300" />
-  <img src="_extensions/tese-ufsc/capturas/captura5.png" width="300" />
+  <img src="_extensions/tese-ufsc/capturas/captura1.png" width="200" />
+  <img src="_extensions/tese-ufsc/capturas/captura2.png" width="200" />
+  <img src="_extensions/tese-ufsc/capturas/captura3.png" width="200" />
+  <img src="_extensions/tese-ufsc/capturas/captura4.png" width="200" />
+  <img src="_extensions/tese-ufsc/capturas/captura5.png" width="200" />
 </div>
 <br>
 
@@ -121,6 +121,7 @@ Se não quiser instalar localmente, é possível acessar o Quarto diretamente no
 - Você basicamente vai editar os arquivos `.qmd` e `_quarto.yml`.
 - O template já vem com dois exemplos de como organizar capítulos.
 - A introdução fica no index.qmd, primeiro capítulo após sumários.
+- **Atenção**: capítulo1 tem código em R e Python. Usuários de Julia: Após instalar a extensão, procure por {r} e {python} no arquivo capitulos/capitulo1.qmd e remova o código (relacionado a figura e tabela) ou substitua por código em Julia.
 
 ## Instalando o template
 
@@ -154,10 +155,6 @@ quarto render --to tese-ufsc-pdf
 ```
 
 Se estiver usando o Rstudio, você pode clicar no botão "Render Book" em Build, e especificar o formato.
-
-## Atenção - capitulo1 tem código de R e Python
-
-Usuários de Julia: Após instalar a extensão, procure por {r} e {python} no arquivo capitulos/capitulo1.qmd e remova o código (relacionado a figura e tabela) ou substitua por código em Julia.
 
 ## Citação
 
