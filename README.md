@@ -1,14 +1,26 @@
 
 # tese-ufsc
 
-![](_extensions/tese-ufsc/logo-quarto.png)
-![](_extensions/tese-ufsc/brasao-UFSC.png)
+![](_extensions/tese-ufsc/logo-quarto.png){width=200px style="float: right; margin-left: 20px;"}
+![](_extensions/tese-ufsc/brasao-UFSC.png){width=200px style="float: right; margin-right: 20px;}
 
 Um template [Quarto](https://quarto.org/docs/get-started/) para teses e dissertações da UFSC.
 
-Exemplo renderizado [aqui](https://github.com/tamimart/tese-ufsc/-tese/tese-ufsc.pdf).
-Capturas de tela do exemplo:
+Exemplos renderizados [aqui](https://github.com/tamimart/tese-ufsc/_tese).
 
+Capturas de tela do pdf:
+
+![](_extensions/tese-ufsc/capturas/captura1.png){width=100px}
+![](_extensions/tese-ufsc/capturas/captura2.png){width=100px}
+![](_extensions/tese-ufsc/capturas/captura3.png){width=100px}
+![](_extensions/tese-ufsc/capturas/captura4.png){width=100px}
+![](_extensions/tese-ufsc/capturas/captura5.png){width=100px}
+
+Capturas de tela do html:
+
+![](_extensions/tese-ufsc/capturas/captura6.png){width=100px}
+![](_extensions/tese-ufsc/capturas/captura7.png){width=100px}
+![](_extensions/tese-ufsc/capturas/captura8.png){width=100px}
 
 ## Por que usar Quarto para escrever a monografia?
 
