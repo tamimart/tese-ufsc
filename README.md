@@ -12,7 +12,7 @@ Exemplos renderizados [aqui](https://github.com/tamimart/tese-ufsc/_tese).
 
 Capturas de tela do pdf:
 <br>
-<div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%;">
+<div style="display: flex; gap: 10px; flex-wrap: wrap; width: 600px;">
   <img src="_extensions/tese-ufsc/capturas/captura1.png" width="150" />
   <img src="_extensions/tese-ufsc/capturas/captura2.png" width="150" />
   <img src="_extensions/tese-ufsc/capturas/captura3.png" width="150" />
@@ -22,12 +22,13 @@ Capturas de tela do pdf:
 <br>
 Capturas de tela do html:
 <br>
-<div style="display: flex; gap: 10px; flex-wrap: wrap; width: 100%;">
-  <img src="_extensions/tese-ufsc/capturas/captura6.png" width="300" />
-  <img src="_extensions/tese-ufsc/capturas/captura7.png" width="300" />
-  <img src="_extensions/tese-ufsc/capturas/captura8.png" width="300" />
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%;">
+  <img src="_extensions/tese-ufsc/capturas/captura6.png" width="500" style="margin: 10px 0;" />
+  <img src="_extensions/tese-ufsc/capturas/captura7.png" width="500" style="margin: 10px 0;" />
+  <img src="_extensions/tese-ufsc/capturas/captura8.png" width="500" style="margin: 10px 0;" />
 </div>
 <br>
+
 ## Por que usar Quarto para escrever a monografia?
 
 - 🌎 **Open-source** e multiplataforma: Funciona no Windows, macOS e Linux.
