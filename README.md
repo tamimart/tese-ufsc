@@ -67,8 +67,8 @@ Se não quiser instalar localmente, é possível acessar o Quarto diretamente no
 .
 ├── LICENSE.md
 ├── README.md
-├── _extensions                    #extensão personalizada com o template UFSC para uso em Quarto; só alterar se souber o que está fazendo ou tiver coragem
-│   └── tese-ufsc
+├── _extensions                    
+│   └── tese-ufsc                   #extensão personalizada com o template UFSC para uso em Quarto; só alterar se souber o que está fazendo ou tiver coragem
 │       ├── _extension.yml
 │       ├── brasao-UFSC.png
 │       ├── capturas

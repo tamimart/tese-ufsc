@@ -90,7 +90,7 @@ Exemplo de figura (@fig-ex):
 #| label: fig-ex
 #| fig-cap: "Exemplo de figura"
 #| fig-pos: "H" #deixa a figura bem posicionada automaticamente
-#| fig-width: 5 #padrão é 7
+#| fig-width: 5 #padrão é 6
 
 library(ggplot2)
 
@@ -109,9 +109,14 @@ ggplot(data = dados, aes(x = bill_length_mm, y = body_mass_g, color = species)) 
 
 ```
 ::: {.content-visible when-format="pdf"}
+\begin{adjustwidth}{1.5cm}{1.5cm} % 1.5cm para esquerda e direita, edite de acordo com o tamanho da figura.
 \begin{spacing}{1} \footnotesize
-Legenda: Exemplo de legenda.
-\end{spacing} \normalsize \bigskip
+Legenda: Exemplo de legenda. Fonte: Dados obtidos em experimento próprio.
+\end{spacing}
+\end{adjustwidth}
+\normalsize \bigskip
 :::
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. 
+
+![Exemplo imagem externa](../imagens/brasao-UFSC.png){width=50%}

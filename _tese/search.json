@@ -34,7 +34,7 @@
     "href": "capitulos/capitulo1.html#subtítulo-capítulo-1",
     "title": "2  Título capítulo 1",
     "section": "",
-    "text": "Tabela 2.1: Título da tabela\n\n\n\n\n\nObservação\nVariável1\nVariável2\n\n\n\n\n1\nA\nX\n\n\n2\nB\nY\n\n\n3\nC\nZ\n\n\n\n\n\n\n\n\n\n\n\n\n2.1.1 Mais um tópico\nAqui está um exemplo de equação (Equação 2.1).\n\\[\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\tag{2.1}\\]\nEssa equação poderia estar inline também, por exemplo: \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).\n\n2.1.1.1 Outro tópico\nExemplo de figura (Figura 2.1):\n\n\n\n\n\n\n\n\nFigura 2.1: Exemplo de figura\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo.",
+    "text": "Tabela 2.1: Título da tabela\n\n\n\n\n\nObservação\nVariável1\nVariável2\n\n\n\n\n1\nA\nX\n\n\n2\nB\nY\n\n\n3\nC\nZ\n\n\n\n\n\n\n\n\n\n\n\n\n2.1.1 Mais um tópico\nAqui está um exemplo de equação (Equação 2.1).\n\\[\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n\\tag{2.1}\\]\nEssa equação poderia estar inline também, por exemplo: \\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\).\n\n2.1.1.1 Outro tópico\nExemplo de figura (Figura 2.1):\n\n\n\n\n\n\n\n\nFigura 2.1: Exemplo de figura\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo.\n\n\n\nExemplo imagem externa",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Título capítulo 1</span>"
     ]

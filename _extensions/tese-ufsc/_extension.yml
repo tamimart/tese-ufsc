@@ -9,10 +9,9 @@ quarto-required: ">=1.7.31"
 contributes:
   project:
     type: book
-    format: tese-ufsc
-    
   formats:
     common:
+      date-format: "D MMMM YYYY"
       logo: brasao-UFSC.png 
       logo-height: "2.54cm"
       justify: true
@@ -20,7 +19,7 @@ contributes:
       toc-depth: 5
       code-block-border-left: "#eeeeee"
       highlight-style: kate
-    html: 
+    html:
       theme: lux
       title-block-banner: true
       page-layout: full
@@ -54,9 +53,9 @@ contributes:
       urlcolor: blue
       citecolor: black
       keep-tex: false
-      
+    
 fig-align: center
-fig-width: 7
+fig-width: 6
 fig-format: svg
 fig-dpi: 600
 fig-cap-location: top
