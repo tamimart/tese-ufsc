@@ -1,0 +1,210 @@
+\begin{center}
+\thispagestyle{empty}
+    
+%\includegraphics{img/brasao_UFSC}
+UNIVERSIDADE FEDERAL DE SANTA CATARINA\\
+\MakeUppercase{$if(teseufsc.centro)$$for(centro)$$centro$$sep$ \\ $endfor$$endif$}
+PROGRAMA DE PÓS-GRADUAÇÃO EM \uppercase{$if(teseufsc.PPG)$$for(PPG)$$teseufsc.PPG$$sep$ \\ $endfor$$endif$}
+\vspace{6em}
+
+{$if(teseufsc.autor)$$for(autor)$$teseufsc.autor$$sep$ \\ $endfor$$endif$}
+
+\vspace{6em}
+
+\textbf{$if(teseufsc.titulo)$$teseufsc.titulo$$endif$}$if(teseufsc.subtitulo)$: {$teseufsc.subtitulo$}$endif$
+
+\vfill
+
+Florianópolis\\
+{if(teseufsc.ano)$$ano$$else$2026$endif$}
+
+\end{center}
+\clearpage
+
+
+%%%%FOLHA DE ROSTO%%%%
+\newpage{} \thispagestyle{empty} \clearpage \setcounter{page}{1}
+\pagestyle{plain}
+
+\begin{center}
+
+{$if(teseufsc.autor)$$for(author)$$teseufsc.autor$$sep$ \\ $endfor$$endif$}
+
+\vspace{16em}
+
+\textbf{$if(teseufsc.titulo)$$teseufsc.titulo$$endif$}$if(teseufsc.subtitulo)$: {$teseufsc.subtitulo$}$endif$
+
+
+\end{center}
+
+\vspace{8em}
+\singlespacing
+\begin{flushright}
+\begin{minipage}{0.5\textwidth}
+{\fontsize{10}{12}\selectfont
+\justifying
+\noindent
+Tese submetida ao Programa de Pós-Graduação em {$if(teseufsc.PPG)$$for(PPG)$$teseufsc.PPG$$sep$  $endfor$$endif$} da Universidade Federal de Santa Catarina como requisito parcial para a obtenção do título de Doutora em {$if(teseufsc.PPG)$$for(PPG)$$teseufsc.PPG$$sep$ \\ $endfor$$endif$}.\\
+
+\noindent
+Orientador (a): Profa. Dra. Cilene Lino de Oliveira\\
+Coorientador (a): Dra. Alexandra Bannach-Brown
+}
+\end{minipage}
+\end{flushright}
+
+\onehalfspacing
+
+\vfill
+
+\begin{center}
+Florianópolis
+
+{$if(teseufsc.ano)$$for(ano)$$teseufsc.ano$$sep$ \\ $endfor$$endif$}
+\end{center}
+
+%%%%FICHA CATALOGRÁFICA%%%%%
+\newpage{} \thispagestyle{empty}
+
+\vspace*{\fill}
+
+\setlength{\fboxsep}{10pt}
+
+\noindent\fbox{%
+\begin{minipage}{0.9\textwidth}
+\begin{center}
+Ficha catalográfica para trabalhos acadêmicos
+
+[Insira neste espaço a ficha catalográfica para trabalhos acadêmicos.]
+
+A ficha é elaborada pela autora no seguinte link: \\
+\url{http://portalbu.ufsc.br/ficha}
+\end{center}
+\end{minipage}
+}
+
+%%%%FICHA DE CERTIFICAÇÃO%%%%%
+\newpage{} \thispagestyle{empty}
+
+\begin{center}
+
+\vspace{1cm}
+
+{$if(teseufsc.autor)$$for(autor)$$teseufsc.autor$$sep$ \\ $endfor$$endif$}
+
+\vspace{1cm}
+
+{$if(teseufsc.autor)$$for(autor)$$teseufsc.autor$$sep$ \\ $endfor$$endif$}
+
+\vspace{1cm}
+
+O presente trabalho em nível {$if(teseufsc.nivel)$$for(nivel)$$teseufsc.nivel$$sep$ \\ $endfor$$endif$} foi avaliado e aprovado, em {$if(teseufsc.dia)$$for(dia)$$teseufsc.dia$$sep$ \\ $endfor$$endif$} de {$if(teseufsc.mes)$$for(mes)$$teseufsc.mes$$sep$ \\ $endfor$$endif$} de {$if(teseufsc.ano)$$for(ano)$$teseufsc.ano$$sep$ \\ $endfor$$endif$}, pela banca examinadora composta pelos seguintes membros:
+
+\vspace{1cm}
+
+Prof(a). [NOME DO(A) EXAMINADOR(A) 1], Dr.(a)
+
+Instituição [nome INSTITUIÇÃO]  
+
+\vspace{1cm}
+
+Prof(a). [NOME DO(A) EXAMINADOR(A) 2], Dr.(a)
+
+Instituição [nome INSTITUIÇÃO]  
+
+\vspace{1cm}
+
+Prof(a). [NOME DO(A) EXAMINADOR(A) 3], Dr.(a)
+
+Instituição [nome INSTITUIÇÃO]  
+
+\vspace{1cm}
+
+Certificamos que esta é a versão original e final do trabalho de conclusão que foi julgado adequado para obtenção do título de Doutora em Farmacologia.
+
+\vspace{2cm}
+\noindent\rule{0.6\textwidth}{0.4pt}
+
+Coordenação do Programa de Pós-Graduação
+
+\vspace{2cm}
+\noindent\rule{0.6\textwidth}{0.4pt}
+
+Profa. Cilene Lino de Oliveira, Dra.\\
+Orientadora
+\vfill
+
+Florianópolis, 2026.
+\end{center}
+
+%%%%DEDICATÓRIA%%%%%
+\newpage{} \thispagestyle{empty}
+
+\begin{flushright}
+\vspace*{\fill}
+\hspace*{0.5\textwidth}
+\begin{minipage}{0.5\textwidth}
+{\fontsize{12}{14}\selectfont
+\justifying
+\noindent
+[Dedicatória. Elemento opcional. Se incluída, insira uma dedicatória de forma breve, prestando homenagem ou dedicando seu trabalho.]
+}
+\end{minipage}
+\end{flushright}
+
+%%%%AGRADECIMENTOS%%%%%
+\newpage{} \thispagestyle{empty}
+
+\begin{center}
+
+\textbf{AGRADECIMENTOS}
+
+\end{center}
+
+Texto de agradecimentos aos que contribuíram para a realização do trabalho.
+
+%%%%EPÍGRAFE%%%%%
+\newpage{} \thispagestyle{empty}
+
+\vspace*{\fill}
+
+\begin{flushright}
+\textit{"Frase significativa relacionada ao tema ou à experiência do trabalho."}\\
+— Autor da citação
+\end{flushright}
+
+%%%%RESUMO%%%%%
+\newpage{} \thispagestyle{empty}
+
+\begin{center}
+
+\textbf{RESUMO}
+
+\end{center}
+
+\singlespacing
+\noindent 
+Testes comportamentais aplicados em roedores são comumente utilizados para predição de efeitos de substâncias potencialmente antidepressivas. O mais utilizado para tal fim é o teste do nado forçado, que desde sua padronização em 1977, vem acumulando publicações com seu uso na literatura. Enquanto a padronização desses testes só foi possível devido ao conhecimento clínico das primeiras substâncias antidepressivas. Esses também auxiliaram na construção dessa literatura, ao apontar novos alvos terapêuticos e levantar possíveis teorias para os mecanismos de ação dos fármacos antidepressivos. Porém, não é sabido o quanto esses mecanismos estão relacionados aos efeitos comportamentais dos antidepressivos. Uma revisão sistemática e meta-análise será conduzida a partir de uma biblioteca de estudos que testaram anidepressivos em roedores submetidos ao teste do nado forçado. Esta biblioteca será atualizada, compreendendo estudos de 1977 até 2023, e a partir do mapeamento desses estudos de acordo com as propriedades experimentais, uma amostra será acessada para elucidar a pergunta de pesquisa. A busca pelos artigos está prevista para ocorrer nas seguintes bases de dados: Medline via Pubmed, Web of Science e EMBASE. Das referências identificadas, está prevista a seleção de acordo com critérios pré-estabelecidos. Os estudos que atenderem aos critérios de elegibilidade passarão pela extração de dados qualitativos e quantitativos, e análise de risco de viés (utilizando a ferramenta Risk of Bias da SYRCLE). Contudo, prevê-se uma grande biblioteca de referências para esse trabalho, do qual demandará de esforço da equipe de trabalho, tempo e habilidades operacionais. Para acelerar os processos de triagem e extração de dados, serão desenvolvidos algoritmos usando técnicas de processamento de linguagem natural para tratamento dos textos, seguido da aplicação de técnicas de aprendizado de máquina e mineração de texto para classificação das referências. Na meta-análise multivariada, será calculado o tamanho de efeito global utilizando o modelo de efeitos aleatórios para os cinco biomarcadores e antidepressivos mais frequentes. A heterogeneidade será estimada por I² e 𝜏². Serão empregados o gráfico em funil, trim-and-fill, Egger's regression e weight-function model para avaliar o risco de viés de publicação. E por fim, será desenvolvido um aplicativo de web que terá módulos para auxiliar farmacologistas em suas revisões e disponibilizar a biblioteca FSTLibrary para posterior exploração por parte dos interessados no assunto.
+
+\vspace{1em}
+
+\noindent \textbf{Palavras-chave:} Eficácia; Biomarcadores; Comportamento; Automatização. 
+
+%%%%ABSTRACT%%%%%
+\newpage{} \thispagestyle{empty}
+
+\begin{center}
+
+\textbf{ABSTRACT}
+
+\end{center}
+
+\singlespacing
+\justifying
+
+\noindent Versão em inglês do resumo. Contém os mesmos elementos, entre 150 e 500 palavras.
+
+\vspace{1em}
+
+\noindent \textbf{Keywords:} keyword 1; keyword 2; keyword 3.
+

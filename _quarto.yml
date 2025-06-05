@@ -68,10 +68,10 @@ teseufsc:
   abreviaturas: | #se não quiser incluir deixar em branco
    \begin{tabular}{ll}
       
-    ANVISA & Agência Nacional de Vigilância Sanitária \\ 
-    CNPq & Conselho Nacional de Desenvolvimento Científico e Tecnológico \\
-    CAPES & Coordenação de Aperfeiçoamento de Pessoal de Nível Superior \\
-    OMS & Organização Mundial da Saúde \\
+     ANVISA & Agência Nacional de Vigilância Sanitária \\ 
+     CNPq & Conselho Nacional de Desenvolvimento Científico e Tecnológico \\
+     CAPES & Coordenação de Aperfeiçoamento de Pessoal de Nível Superior \\
+     OMS & Organização Mundial da Saúde \\
       
    \end{tabular}
   ficha-catalografica: "imagens/ficha-catalografica.png" #caminho para a imagem da ficha catalográfica; se deixar em branco, aparece template.
