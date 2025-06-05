@@ -61,18 +61,18 @@
 
     % centrelize tocs title and standardize list format
 
-    \renewcommand{\cfttoctitlefont}{\hfill\bfseries}
-    \renewcommand{\cftaftertoctitle}{\hfill}
-    \setlength{\cftbeforetoctitleskip}{-1.5em}
+    \renewcommand{\cfttoctitlefont}{\tiny}
+    \setlength{\cftbeforetoctitleskip}{0pt}
+    \setlength{\cftaftertoctitleskip}{0pt}
     
     \renewcommand{\cftloftitlefont}{\hfill\bfseries}
     \renewcommand{\cftafterloftitle}{\hfill}
     \setlength{\cftbeforeloftitleskip}{-1.5em}
-    
+        
     \renewcommand{\cftfigpresnum}{Figura~}
     \renewcommand{\cftfigaftersnum}{ -- }
     \setlength{\cftfignumwidth}{4.5em}
-
+    
     \renewcommand{\cftlottitlefont}{\hfill\bfseries}
     \renewcommand{\cftafterlottitle}{\hfill}
     \setlength{\cftbeforelottitleskip}{-1.5em}
@@ -80,6 +80,31 @@
     \renewcommand{\cfttabpresnum}{Tabela~}
     \renewcommand{\cfttabaftersnum}{ -- }
     \setlength{\cfttabnumwidth}{4.5em}
+    
+    % correct space between first and second item in the lists
+    \usepackage{textcase}
+    \newcommand{\tocFont}{\fontsize{12}{14}\selectfont}
+
+    % Chapter: UPPERCASE, bold
+    \renewcommand{\cftchapfont}{\tocFont\bfseries\MakeTextUppercase}      
+    \renewcommand{\cftchappagefont}{\tocFont\bfseries}
+    
+    % Section: UPPERCASE, normal weight
+    \renewcommand{\cftsecfont}{\tocFont\MakeTextUppercase}            
+    \renewcommand{\cftsecpagefont}{\tocFont}
+    
+    % Subsection: Bold
+    \renewcommand{\cftsubsecfont}{\tocFont\bfseries}    
+    \renewcommand{\cftsubsecpagefont}{\tocFont}
+    
+    % Subsubsection: Italic
+    \renewcommand{\cftsubsubsecfont}{\tocFont\itshape} 
+    \renewcommand{\cftsubsubsecpagefont}{\tocFont}
+
+    % correct space between first and second item in the lists
+    \newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+    \addtocontents{lof}{\protect\noaddvspace}
+    \addtocontents{lot}{\protect\noaddvspace}
 
     %% figures and tables
     \usepackage{caption}

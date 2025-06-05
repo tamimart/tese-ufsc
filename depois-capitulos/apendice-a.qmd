@@ -1,4 +1,4 @@
-# Apêndice A -- Título do apêndice {-}
+# APÊNDICE A -- TÍTULO DO APÊNDICE {-}
 
 Adicionar informações extras.
 

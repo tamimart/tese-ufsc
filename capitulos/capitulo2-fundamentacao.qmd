@@ -1,8 +1,8 @@
 ---
-source: visual #edição do capítulo através de cliques e não códigos em quarto (source [padrão])
+editor: visual #edição do capítulo através de cliques e não códigos em quarto (source [padrão])
 ---
 
-## Fundamentação teórica
+## FUNDAMENTAÇÃO TEÓRICA
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna. Donec ullamcorper leo vitae fringilla ornare. Morbi vitae leo ligula. Sed feugiat felis tellus, eget sodales lorem congue at.
 

@@ -1,4 +1,5 @@
 %%%% LISTA DE FIGURAS %%%%
+\onehalfspacing
 $if(teseufsc.lof)$
   \clearpage
   {
@@ -10,7 +11,7 @@ $if(teseufsc.lof)$
 $endif$
 
 %%%% LISTA DE TABELAS %%%%
-\doublespacing
+\onehalfspacing
 $if(teseufsc.lot)$
   \clearpage
   {
@@ -46,9 +47,18 @@ $if(toc)$
       $endif$
    $endif$
     
-    \renewcommand{\contentsname}{SUMÁRIO}
     \setcounter{tocdepth}{$toc-depth$}
+    
+    \renewcommand{\contentsname}{}
+    
+    \begin{center}
+    \textbf{SUMÁRIO}
+    \end{center}
+    \vspace{1.5em}
+    \pagestyle{empty}
+    \addtocontents{toc}{\protect\thispagestyle{empty}}
     \tableofcontents
-    \thispagestyle{empty}
+    \cleardoublepage
+    \pagestyle{fancy}
   }
 $endif$

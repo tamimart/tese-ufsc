@@ -1,4 +1,4 @@
-# Anexo A -- Título do anexo {-}
+# ANEXO A -- TÍTULO DO ANEXO {-}
 
 Adicionar informações extras externas.
 

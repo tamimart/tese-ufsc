@@ -3,7 +3,7 @@
 echo: false #se quer que todos os códigos sejam mostrados, colocar true
 ---
 
-# Título capítulo 1
+# TÍTULO CAPÍTULO 1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. 
 
@@ -41,7 +41,7 @@ Código em Python:
 print("Olá, ufsquianos!")
 ```
 
-## Subtítulo capítulo 1
+## SUBTÍTULO CAPÍTULO 1
 
  A @tbl-ex representa um exemplo de tabela em markdown (@tbl-ex).
 

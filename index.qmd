@@ -1,4 +1,4 @@
-# Introdução {#sec-intro}
+# INTRODUÇÃO {#sec-intro}
 
 Esse é um exemplo de um documento escrito em [Quarto](https://quarto.org) [@martins2025]. Você também pode adicionar citação assim: segundo @martins2025...
 
@@ -30,11 +30,11 @@ flowchart TB
     style G fill:#00923f,stroke:#666666,color:#FFFFFF;
 ```
 
-# Objetivo geral {#sec-goals}
+# OBJETIVO GERAL {#sec-goals}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt volutpat placerat. Praesent posuere id magna ac auctor.
 
-## Objetivos específicos
+## OBJETIVOS ESPECÍFICOS
 
 a) Praesent posuere id magna ac auctor. Aenean vel elit id augue sagittis rhoncus at sed justo. Mauris eu molestie magna.
 b) Morbi vitae leo ligula.
